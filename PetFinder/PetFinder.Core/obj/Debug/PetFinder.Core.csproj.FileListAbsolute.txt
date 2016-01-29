@@ -3,3 +3,10 @@ C:\dev\origin\Hackathon\PetFinder\PetFinder.Core\bin\Debug\PetFinder.Core.pdb
 C:\dev\origin\Hackathon\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.csprojResolveAssemblyReference.cache
 C:\dev\origin\Hackathon\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.dll
 C:\dev\origin\Hackathon\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.pdb
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\PetFinder.Core.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\PetFinder.Core.pdb
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\Newtonsoft.Json.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\Newtonsoft.Json.xml
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.csprojResolveAssemblyReference.cache
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.pdb
