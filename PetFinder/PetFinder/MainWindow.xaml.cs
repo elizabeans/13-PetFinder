@@ -1,18 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using PetFinder.Core;
+﻿using System.Windows;
 using PetFinder.Core.Services;
 
 namespace PetFinder
@@ -27,7 +13,7 @@ namespace PetFinder
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void randomPetsButton_Click(object sender, RoutedEventArgs e)
         {
             // checking to see if MD5 Hash worked
             string pet = PetService.GetPet();
