@@ -11,23 +11,11 @@ namespace PetFinder.Core.Domain
         public string name { get; set; }
         public string age { get; set; }
         public string image { get; set; }
+        public Contact contact { get; set; }
     }
 
-    /*
-    public class Media
+    public class Contact
     {
-        public Photos photos { get; set; }
+        public string email { get; set; }
     }
-    
-    public class Photos
-    {
-        public Photo photo { get; set; }
-    }
-
-    public class Photo
-    {
-        public int photoiD = 3;
-        public string text { get; set; }
-    }
-    */
 }

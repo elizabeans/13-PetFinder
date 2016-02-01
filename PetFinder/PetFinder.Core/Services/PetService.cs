@@ -23,8 +23,14 @@ namespace PetFinder.Core.Services
             using (WebClient wc = new WebClient())
             { 
                 string petId = wc.DownloadString($"http://api.petfinder.com/pet.getRandom?key={ApiKey}");
+
+                // parse the XML data from API
                 XDocument doc = XDocument.Parse(petId);
+
+                // converting XML to JSON
                 string stuff = JsonConvert.SerializeXNode(doc);
+
+                // parse the JSON
                 var o = JObject.Parse(stuff);
                 string Id = o["petfinder"]["petIds"]["id"].ToString();
                 return Id;
@@ -33,7 +39,27 @@ namespace PetFinder.Core.Services
 
         public static Pet GetPetInfo()
         {
-            string petId = GetPetId();
+            var petFound = false;
+            Pet pet = null;
+
+            while (!petFound)
+            {
+                try
+                {
+                    pet = GeneratePet(GetPetId());
+                    petFound = true;
+                }
+                catch (InvalidOperationException e)
+                {
+
+                }
+            }
+            return pet;
+
+        }
+
+        private static Pet GeneratePet(string petId)
+        {
             using (WebClient wc = new WebClient())
             {
                 string grabPetInfo = wc.DownloadString($"http://api.petfinder.com/pet.get?key={ApiKey}&id={petId}");
@@ -41,15 +67,14 @@ namespace PetFinder.Core.Services
                 string stuff = JsonConvert.SerializeXNode(doc);
                 var o = JObject.Parse(stuff);
 
-                //string petsImage = o["petfinder"]["pet"]["media"]["photos"]["photo"][3]["#text"].ToString();
-
                 string petsJson = o["petfinder"]["pet"].ToString();
-                Pet pet = JsonConvert.DeserializeObject<Pet>(petsJson);
-                pet.image = o["petfinder"]["pet"]["media"]["photos"]["photo"][3]["#text"].ToString();
 
+                Pet pet = JsonConvert.DeserializeObject<Pet>(petsJson);
+
+                //gets and sets pet image url
+                pet.image = o["petfinder"]["pet"]["media"]["photos"]["photo"][3]["#text"].ToString();
                 return pet;
             }
         }
-
     }
 }

@@ -55,8 +55,7 @@
     <Compile Include="Domain\Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\PetService.cs" />
-    <Compile Include="Services\XmlDocument.cs" />
-    <Compile Include="Services\Xmldocument1.cs" />
+    <Compile Include="Services\SmsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
