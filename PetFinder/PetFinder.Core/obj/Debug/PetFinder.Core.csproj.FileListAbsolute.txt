@@ -10,3 +10,8 @@ C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\Newtonsoft.Json.xm
 C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.csprojResolveAssemblyReference.cache
 C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.dll
 C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\obj\Debug\PetFinder.Core.pdb
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\RestSharp.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\Twilio.Api.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\RestSharp.xml
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\Twilio.Api.pdb
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder.Core\bin\Debug\Twilio.Api.xml

@@ -32,3 +32,8 @@ C:\dev\origin\13-PetFinder\PetFinder\PetFinder\obj\Debug\MainWindow.baml
 C:\dev\origin\13-PetFinder\PetFinder\PetFinder\obj\Debug\PetFinder.g.resources
 C:\dev\origin\13-PetFinder\PetFinder\PetFinder\obj\Debug\PetFinder.Properties.Resources.resources
 C:\dev\origin\13-PetFinder\PetFinder\PetFinder\obj\Debug\PetFinder.csproj.GenerateResource.Cache
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder\bin\Debug\RestSharp.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder\bin\Debug\Twilio.Api.dll
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder\bin\Debug\RestSharp.xml
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder\bin\Debug\Twilio.Api.pdb
+C:\dev\origin\13-PetFinder\PetFinder\PetFinder\bin\Debug\Twilio.Api.xml

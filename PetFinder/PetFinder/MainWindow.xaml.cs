@@ -1,5 +1,8 @@
 ﻿using System.Windows;
 using PetFinder.Core.Services;
+using PetFinder.Core.Domain;
+using System.Windows.Media.Imaging;
+using System;
 
 namespace PetFinder
 {
@@ -15,9 +18,19 @@ namespace PetFinder
 
         private void randomPetsButton_Click(object sender, RoutedEventArgs e)
         {
-            // checking to see if MD5 Hash worked
-            string pet = PetService.GetPet();
-            MessageBox.Show(pet);
+            Pet pet = PetService.GetPetInfo();
+            randomPetOneImage.Source = GetImage(pet.image);
+
+
+        }
+
+        private BitmapImage GetImage (string imagePath)
+        {
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(imagePath, UriKind.Absolute);
+            bitmap.EndInit();
+            return bitmap;
         }
     }
 }

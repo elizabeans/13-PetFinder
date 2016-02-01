@@ -31,6 +31,25 @@ namespace PetFinder.Core.Services
             }
         }
 
+        public static Pet GetPetInfo()
+        {
+            string petId = GetPetId();
+            using (WebClient wc = new WebClient())
+            {
+                string grabPetInfo = wc.DownloadString($"http://api.petfinder.com/pet.get?key={ApiKey}&id={petId}");
+                XDocument doc = XDocument.Parse(grabPetInfo);
+                string stuff = JsonConvert.SerializeXNode(doc);
+                var o = JObject.Parse(stuff);
+
+                //string petsImage = o["petfinder"]["pet"]["media"]["photos"]["photo"][3]["#text"].ToString();
+
+                string petsJson = o["petfinder"]["pet"].ToString();
+                Pet pet = JsonConvert.DeserializeObject<Pet>(petsJson);
+                pet.image = o["petfinder"]["pet"]["media"]["photos"]["photo"][3]["#text"].ToString();
+
+                return pet;
+            }
+        }
 
     }
 }

@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PetFinder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="550">
+        Title="MainWindow" Height="550" Width="1000">
     <Grid>
         <Button x:Name="randomPetsButton" Content="More Pets" HorizontalAlignment="Left" Margin="170,274,0,0" VerticalAlignment="Top" Width="210" Click="randomPetsButton_Click" Height="35"/>
 
-        <Image x:Name="randomPetOneImage" HorizontalAlignment="Left" Height="86" Margin="128,10,0,0" VerticalAlignment="Top" Width="84"/>
+        <Image x:Name="randomPetOneImage" HorizontalAlignment="Left" Height="299" Margin="128,10,0,0" VerticalAlignment="Top" Width="300"/>
         <Label x:Name="randomPetOneLabel" Content="Name 1" HorizontalAlignment="Left" Margin="128,101,0,0" VerticalAlignment="Top" Width="84"/>
 
         <Image x:Name="randomPetTwoImage" HorizontalAlignment="Left" Height="86" Margin="128,145,0,0" VerticalAlignment="Top" Width="84"/>
